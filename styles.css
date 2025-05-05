@@ -840,7 +840,6 @@ section.fade-in {
 .service-card {
   /* Remove highlight azul */
   -webkit-tap-highlight-color: transparent;
-  tap-highlight-color: transparent;
 
   /* Otimização para touch */
   touch-action: manipulation;
