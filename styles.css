@@ -836,3 +836,21 @@ section.fade-in {
   background-size: 100%;
   transition: background-size 0s;
 }
+
+.service-card {
+  /* Remove highlight padrão */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+
+  /* Melhora a experiência de toque */
+  touch-action: manipulation; /* Otimiza a resposta ao toque */
+
+  /* Efeito visual personalizado para toque */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito de "ativo" personalizado */
+.service-card:active {
+  transform: scale(0.98); /* Pequeno encolhimento */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+}

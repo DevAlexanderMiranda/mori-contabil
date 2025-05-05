@@ -362,7 +362,7 @@ function openServiceModal(serviceTitle) {
   const service = servicesData[serviceTitle];
   if (!service) return;
 
-  // Preencher modal com os dados
+  // Preencher modal
 
   document.getElementById("modalTitle").textContent = serviceTitle;
   document.getElementById("modalDescription").textContent = service.description;
@@ -375,7 +375,7 @@ function openServiceModal(serviceTitle) {
     benefitsList.appendChild(li);
   });
 
-  // Configurar o botão do WhatsApp
+  // Configuração do botão do WhatsApp
   const whatsappButton = document.getElementById("contactButton");
   const message = `Olá Mori Contábil! Gostaria de saber mais sobre o serviço: ${serviceTitle}`;
   const encodedMessage = encodeURIComponent(message);
